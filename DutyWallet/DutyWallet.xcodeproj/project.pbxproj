@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B71DEF3F2AB3853900B02547 /* RepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71DEF3E2AB3853900B02547 /* RepositoryProtocol.swift */; };
+		B71DEF412AB386F000B02547 /* RealmRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71DEF402AB386F000B02547 /* RealmRepository.swift */; };
+		B71DEF442AB389FF00B02547 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = B71DEF432AB389FF00B02547 /* Realm */; };
+		B71DEF462AB389FF00B02547 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B71DEF452AB389FF00B02547 /* RealmSwift */; };
+		B74605242AB44AB900577685 /* Duty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74605232AB44AB900577685 /* Duty.swift */; };
+		B74605262AB44B3B00577685 /* StorableDuty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74605252AB44B3B00577685 /* StorableDuty.swift */; };
+		B74605292AB44FC300577685 /* MainVewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74605282AB44FC300577685 /* MainVewModel.swift */; };
+		B74605302AB4D4D300577685 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B746052F2AB4D4D300577685 /* Color.swift */; };
+		B746EB762AB2F16500E87598 /* DutyWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B746EB752AB2F16500E87598 /* DutyWalletApp.swift */; };
+		B746EB782AB2F16500E87598 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B746EB772AB2F16500E87598 /* MainView.swift */; };
+		B746EB7A2AB2F16800E87598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B746EB792AB2F16800E87598 /* Assets.xcassets */; };
+		B746EB7E2AB2F16800E87598 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B746EB7D2AB2F16800E87598 /* Preview Assets.xcassets */; };
+		B78F17442AB71F4B00666DEA /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78F17432AB71F4B00666DEA /* Person.swift */; };
+		B78F17462AB7201C00666DEA /* StorablePerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78F17452AB7201C00666DEA /* StorablePerson.swift */; };
+		B7E28B4C2AB60B6300E589DB /* DetailDutyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E28B4B2AB60B6300E589DB /* DetailDutyView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B71DEF3E2AB3853900B02547 /* RepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryProtocol.swift; sourceTree = "<group>"; };
+		B71DEF402AB386F000B02547 /* RealmRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmRepository.swift; sourceTree = "<group>"; };
+		B74605232AB44AB900577685 /* Duty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Duty.swift; sourceTree = "<group>"; };
+		B74605252AB44B3B00577685 /* StorableDuty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorableDuty.swift; sourceTree = "<group>"; };
+		B74605282AB44FC300577685 /* MainVewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVewModel.swift; sourceTree = "<group>"; };
+		B746052F2AB4D4D300577685 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		B746EB722AB2F16500E87598 /* DutyWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DutyWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B746EB752AB2F16500E87598 /* DutyWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DutyWalletApp.swift; sourceTree = "<group>"; };
+		B746EB772AB2F16500E87598 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B746EB792AB2F16800E87598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B746EB7B2AB2F16800E87598 /* DutyWallet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DutyWallet.entitlements; sourceTree = "<group>"; };
+		B746EB7D2AB2F16800E87598 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B78F17432AB71F4B00666DEA /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		B78F17452AB7201C00666DEA /* StorablePerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorablePerson.swift; sourceTree = "<group>"; };
+		B7E28B4B2AB60B6300E589DB /* DetailDutyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDutyView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B746EB6F2AB2F16500E87598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B71DEF462AB389FF00B02547 /* RealmSwift in Frameworks */,
+				B71DEF442AB389FF00B02547 /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B74605202AB448E300577685 /* Enitity */ = {
+			isa = PBXGroup;
+			children = (
+				B74605252AB44B3B00577685 /* StorableDuty.swift */,
+				B78F17452AB7201C00666DEA /* StorablePerson.swift */,
+			);
+			path = Enitity;
+			sourceTree = "<group>";
+		};
+		B74605272AB44FB000577685 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B74605282AB44FC300577685 /* MainVewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B746052A2AB4A63D00577685 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B746EB772AB2F16500E87598 /* MainView.swift */,
+				B7E28B4B2AB60B6300E589DB /* DetailDutyView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B746052D2AB4D4A100577685 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				B746052E2AB4D4C700577685 /* Extension */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		B746052E2AB4D4C700577685 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B746052F2AB4D4D300577685 /* Color.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B746EB692AB2F16500E87598 = {
+			isa = PBXGroup;
+			children = (
+				B746EB742AB2F16500E87598 /* DutyWallet */,
+				B746EB732AB2F16500E87598 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B746EB732AB2F16500E87598 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B746EB722AB2F16500E87598 /* DutyWallet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B746EB742AB2F16500E87598 /* DutyWallet */ = {
+			isa = PBXGroup;
+			children = (
+				B746EB842AB2F17200E87598 /* Resourses */,
+				B746052D2AB4D4A100577685 /* Utility */,
+				B746EB862AB2F19600E87598 /* System */,
+				B746EB872AB2F1E300E87598 /* Repository */,
+				B746EB882AB2F1F700E87598 /* Model */,
+				B746EB852AB2F18800E87598 /* UI */,
+			);
+			path = DutyWallet;
+			sourceTree = "<group>";
+		};
+		B746EB7C2AB2F16800E87598 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B746EB7D2AB2F16800E87598 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B746EB842AB2F17200E87598 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				B746EB7C2AB2F16800E87598 /* Preview Content */,
+				B746EB7B2AB2F16800E87598 /* DutyWallet.entitlements */,
+				B746EB792AB2F16800E87598 /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		B746EB852AB2F18800E87598 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B746EB8A2AB2FABD00E87598 /* Component */,
+				B746EB892AB2FAB100E87598 /* Screen */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B746EB862AB2F19600E87598 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				B746EB752AB2F16500E87598 /* DutyWalletApp.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		B746EB872AB2F1E300E87598 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				B74605202AB448E300577685 /* Enitity */,
+				B71DEF3E2AB3853900B02547 /* RepositoryProtocol.swift */,
+				B71DEF402AB386F000B02547 /* RealmRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		B746EB882AB2F1F700E87598 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B74605232AB44AB900577685 /* Duty.swift */,
+				B78F17432AB71F4B00666DEA /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B746EB892AB2FAB100E87598 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				B746052A2AB4A63D00577685 /* View */,
+				B74605272AB44FB000577685 /* ViewModel */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		B746EB8A2AB2FABD00E87598 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B746EB712AB2F16500E87598 /* DutyWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B746EB812AB2F16800E87598 /* Build configuration list for PBXNativeTarget "DutyWallet" */;
+			buildPhases = (
+				B746EB6E2AB2F16500E87598 /* Sources */,
+				B746EB6F2AB2F16500E87598 /* Frameworks */,
+				B746EB702AB2F16500E87598 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DutyWallet;
+			packageProductDependencies = (
+				B71DEF432AB389FF00B02547 /* Realm */,
+				B71DEF452AB389FF00B02547 /* RealmSwift */,
+			);
+			productName = DutyWallet;
+			productReference = B746EB722AB2F16500E87598 /* DutyWallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B746EB6A2AB2F16500E87598 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					B746EB712AB2F16500E87598 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = B746EB6D2AB2F16500E87598 /* Build configuration list for PBXProject "DutyWallet" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B746EB692AB2F16500E87598;
+			packageReferences = (
+				B71DEF422AB389FF00B02547 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = B746EB732AB2F16500E87598 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B746EB712AB2F16500E87598 /* DutyWallet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B746EB702AB2F16500E87598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B746EB7E2AB2F16800E87598 /* Preview Assets.xcassets in Resources */,
+				B746EB7A2AB2F16800E87598 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B746EB6E2AB2F16500E87598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B78F17442AB71F4B00666DEA /* Person.swift in Sources */,
+				B74605292AB44FC300577685 /* MainVewModel.swift in Sources */,
+				B74605242AB44AB900577685 /* Duty.swift in Sources */,
+				B74605302AB4D4D300577685 /* Color.swift in Sources */,
+				B746EB782AB2F16500E87598 /* MainView.swift in Sources */,
+				B71DEF412AB386F000B02547 /* RealmRepository.swift in Sources */,
+				B746EB762AB2F16500E87598 /* DutyWalletApp.swift in Sources */,
+				B71DEF3F2AB3853900B02547 /* RepositoryProtocol.swift in Sources */,
+				B7E28B4C2AB60B6300E589DB /* DetailDutyView.swift in Sources */,
+				B74605262AB44B3B00577685 /* StorableDuty.swift in Sources */,
+				B78F17462AB7201C00666DEA /* StorablePerson.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B746EB7F2AB2F16800E87598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B746EB802AB2F16800E87598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		B746EB822AB2F16800E87598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P47CZ87RVS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DutyWallet;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ubahwin.DutyWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B746EB832AB2F16800E87598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P47CZ87RVS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DutyWallet;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ubahwin.DutyWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B746EB6D2AB2F16500E87598 /* Build configuration list for PBXProject "DutyWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B746EB7F2AB2F16800E87598 /* Debug */,
+				B746EB802AB2F16800E87598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B746EB812AB2F16800E87598 /* Build configuration list for PBXNativeTarget "DutyWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B746EB822AB2F16800E87598 /* Debug */,
+				B746EB832AB2F16800E87598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B71DEF422AB389FF00B02547 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B71DEF432AB389FF00B02547 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B71DEF422AB389FF00B02547 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		B71DEF452AB389FF00B02547 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B71DEF422AB389FF00B02547 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B746EB6A2AB2F16500E87598 /* Project object */;
+}
