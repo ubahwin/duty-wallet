@@ -12,4 +12,5 @@ struct Duty: Identifiable {
     var id: UUID
     var amount: Double
     var person: Person
+    var historyList: [History]
 }

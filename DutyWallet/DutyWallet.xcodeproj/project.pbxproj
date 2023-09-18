@@ -13,7 +13,7 @@
 		B71DEF462AB389FF00B02547 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B71DEF452AB389FF00B02547 /* RealmSwift */; };
 		B74605242AB44AB900577685 /* Duty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74605232AB44AB900577685 /* Duty.swift */; };
 		B74605262AB44B3B00577685 /* StorableDuty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74605252AB44B3B00577685 /* StorableDuty.swift */; };
-		B74605292AB44FC300577685 /* MainVewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74605282AB44FC300577685 /* MainVewModel.swift */; };
+		B74605292AB44FC300577685 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74605282AB44FC300577685 /* MainViewModel.swift */; };
 		B74605302AB4D4D300577685 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B746052F2AB4D4D300577685 /* Color.swift */; };
 		B746EB762AB2F16500E87598 /* DutyWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B746EB752AB2F16500E87598 /* DutyWalletApp.swift */; };
 		B746EB782AB2F16500E87598 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B746EB772AB2F16500E87598 /* MainView.swift */; };
@@ -22,6 +22,9 @@
 		B78F17442AB71F4B00666DEA /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78F17432AB71F4B00666DEA /* Person.swift */; };
 		B78F17462AB7201C00666DEA /* StorablePerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78F17452AB7201C00666DEA /* StorablePerson.swift */; };
 		B7E28B4C2AB60B6300E589DB /* DetailDutyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E28B4B2AB60B6300E589DB /* DetailDutyView.swift */; };
+		B7E3ED742AB75D7400950AFA /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E3ED732AB75D7400950AFA /* History.swift */; };
+		B7E3ED762AB7646600950AFA /* StorableHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E3ED752AB7646600950AFA /* StorableHistory.swift */; };
+		B7E3ED7A2AB7979900950AFA /* DetailDutyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E3ED792AB7979900950AFA /* DetailDutyViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +32,7 @@
 		B71DEF402AB386F000B02547 /* RealmRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmRepository.swift; sourceTree = "<group>"; };
 		B74605232AB44AB900577685 /* Duty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Duty.swift; sourceTree = "<group>"; };
 		B74605252AB44B3B00577685 /* StorableDuty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorableDuty.swift; sourceTree = "<group>"; };
-		B74605282AB44FC300577685 /* MainVewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVewModel.swift; sourceTree = "<group>"; };
+		B74605282AB44FC300577685 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		B746052F2AB4D4D300577685 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		B746EB722AB2F16500E87598 /* DutyWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DutyWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B746EB752AB2F16500E87598 /* DutyWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DutyWalletApp.swift; sourceTree = "<group>"; };
@@ -40,6 +43,9 @@
 		B78F17432AB71F4B00666DEA /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		B78F17452AB7201C00666DEA /* StorablePerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorablePerson.swift; sourceTree = "<group>"; };
 		B7E28B4B2AB60B6300E589DB /* DetailDutyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDutyView.swift; sourceTree = "<group>"; };
+		B7E3ED732AB75D7400950AFA /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		B7E3ED752AB7646600950AFA /* StorableHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorableHistory.swift; sourceTree = "<group>"; };
+		B7E3ED792AB7979900950AFA /* DetailDutyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDutyViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 			children = (
 				B74605252AB44B3B00577685 /* StorableDuty.swift */,
 				B78F17452AB7201C00666DEA /* StorablePerson.swift */,
+				B7E3ED752AB7646600950AFA /* StorableHistory.swift */,
 			);
 			path = Enitity;
 			sourceTree = "<group>";
@@ -67,7 +74,8 @@
 		B74605272AB44FB000577685 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				B74605282AB44FC300577685 /* MainVewModel.swift */,
+				B74605282AB44FC300577685 /* MainViewModel.swift */,
+				B7E3ED792AB7979900950AFA /* DetailDutyViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -176,6 +184,7 @@
 			children = (
 				B74605232AB44AB900577685 /* Duty.swift */,
 				B78F17432AB71F4B00666DEA /* Person.swift */,
+				B7E3ED732AB75D7400950AFA /* History.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -274,14 +283,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				B78F17442AB71F4B00666DEA /* Person.swift in Sources */,
-				B74605292AB44FC300577685 /* MainVewModel.swift in Sources */,
+				B74605292AB44FC300577685 /* MainViewModel.swift in Sources */,
+				B7E3ED762AB7646600950AFA /* StorableHistory.swift in Sources */,
 				B74605242AB44AB900577685 /* Duty.swift in Sources */,
 				B74605302AB4D4D300577685 /* Color.swift in Sources */,
 				B746EB782AB2F16500E87598 /* MainView.swift in Sources */,
 				B71DEF412AB386F000B02547 /* RealmRepository.swift in Sources */,
+				B7E3ED7A2AB7979900950AFA /* DetailDutyViewModel.swift in Sources */,
 				B746EB762AB2F16500E87598 /* DutyWalletApp.swift in Sources */,
 				B71DEF3F2AB3853900B02547 /* RepositoryProtocol.swift in Sources */,
 				B7E28B4C2AB60B6300E589DB /* DetailDutyView.swift in Sources */,
+				B7E3ED742AB75D7400950AFA /* History.swift in Sources */,
 				B74605262AB44B3B00577685 /* StorableDuty.swift in Sources */,
 				B78F17462AB7201C00666DEA /* StorablePerson.swift in Sources */,
 			);

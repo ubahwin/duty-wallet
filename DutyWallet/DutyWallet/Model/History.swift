@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct History: Identifiable {
+    var id: UUID
+    var value: Double
+    var info: String
+}
