@@ -16,7 +16,7 @@ class RealmRepository<EntityObject>: RepositoryProtocol
 
     init() {
         let config = Realm.Configuration(
-            schemaVersion: 3)
+            schemaVersion: 4)
         Realm.Configuration.defaultConfiguration = config
         realm = try! Realm()
     }
@@ -25,6 +25,11 @@ class RealmRepository<EntityObject>: RepositoryProtocol
         try realm.write {
             realm.add(entity.toStorable())
         }
+    }
+    
+    func read(id: UUID) -> EntityObject? {
+        let object = realm.object(ofType: EntityObject.StoreType.self, forPrimaryKey: id)?.model as? EntityObject
+        return object
     }
     
     func readAll() -> [EntityObject] {
