@@ -1,5 +1,5 @@
 //
-//  MainVewModel.swift
+//  MainViewModel.swift
 //  DutyWallet
 //
 //  Created by Иван Вдовин on 15.09.2023.
@@ -8,9 +8,11 @@
 import Foundation
 import SwiftUI
 
-class MainVewModel<T: RepositoryProtocol>: ObservableObject where T.Entity == Duty {
-    @Published var creditors: [Duty] = []
-    @Published var debtors: [Duty] = []
+class MainViewModel<T>: ObservableObject where T.Entity == Duty, T: RepositoryProtocol {
+    @Published var creditors = [Duty]()
+    @Published var debtors = [Duty]()
+    
+    @Published var currentHistory = [History]()
     
     private let repository: T
     
@@ -21,13 +23,19 @@ class MainVewModel<T: RepositoryProtocol>: ObservableObject where T.Entity == Du
     
     func reload() {
         let duties = repository.readAll()
-        self.creditors = duties.filter({ $0.person.role == .creditor })
-        self.debtors = duties.filter({ $0.person.role == .debtor })
+        
+        for duty in duties {
+            if duty.person.role == .creditor {
+                self.creditors.append(duty)
+            } else {
+                self.debtors.append(duty)
+            }
+        }
     }
     
     func addDuty(amount: String, name: String, role: Person.Role) {
         let person = Person(name: name, role: role)
-        let duty = Duty(id: UUID(), amount: Double(amount) ?? 0, person: person)
+        let duty = Duty(id: UUID(), amount: Double(amount) ?? 0, person: person, historyList: [])
         
         try? repository.create(entity: duty)
         reload()
@@ -38,7 +46,6 @@ class MainVewModel<T: RepositoryProtocol>: ObservableObject where T.Entity == Du
         let deletingEntity = role == .creditor ? creditors[index] : debtors[index]
             
         try? repository.delete(entity: deletingEntity)
-        
         reload()
     }
 }
