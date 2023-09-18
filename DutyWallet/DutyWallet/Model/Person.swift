@@ -14,5 +14,12 @@ struct Person {
     enum Role: String {
         case creditor
         case debtor
+        
+        var title: String {
+            switch self {
+            case .creditor: return "тот, кому должны"
+            case .debtor: return "тот, кто должен"
+            }
+        }
     }
 }
