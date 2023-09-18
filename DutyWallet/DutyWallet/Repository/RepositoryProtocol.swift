@@ -11,6 +11,7 @@ protocol RepositoryProtocol {
     associatedtype Entity
     
     func create(entity: Entity) throws
+    func read(id: UUID) -> Entity?
     func readAll() -> [Entity]
     func update(entity: Entity) throws
     func delete(entity: Entity) throws
