@@ -7,7 +7,7 @@
 ![](https://img.shields.io/badge/iOS-16%2B-green?logo=apple)
 ![](https://img.shields.io/badge/Swift%205.9-FA7343?style=flat&logo=swift&logoColor=white)
 
-This app stores your debts and loans, with extensible repository pattern on Realm
+This app stores your debts and loans.
 
 <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; column-gap: 24px; row-gap: 20px;">
   <span><img src="img/1.png" style="width:200px;"></span>
@@ -45,3 +45,4 @@ DutyWallet
 - [SwiftUI](https://developer.apple.com/xcode/swiftui/)
 - [Realm](https://realm.io/realm-swift/)
 - [Repository Pattern](https://habr.com/ru/articles/248505/)
+- [Swift Package Manager]()
