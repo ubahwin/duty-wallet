@@ -17,8 +17,8 @@ struct Person {
         
         var title: String {
             switch self {
-            case .creditor: return "тот, кому должны"
-            case .debtor: return "тот, кто должен"
+            case .creditor: return "тот, кому я должен"
+            case .debtor: return "тот, кто мне должен"
             }
         }
     }

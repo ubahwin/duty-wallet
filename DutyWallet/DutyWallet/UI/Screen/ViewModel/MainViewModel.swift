@@ -11,33 +11,28 @@ import SwiftUI
 class MainViewModel<T>: ObservableObject where T.Entity == Duty, T: RepositoryProtocol {
     @Published var creditors = [Duty]()
     @Published var debtors = [Duty]()
-    
-    @Published var currentHistory = [History]()
-    
-    private let repository: T
+        
+    private let dutiesRepository: T
     
     init(repository: T) {
-        self.repository = repository
+        self.dutiesRepository = repository
         reload()
     }
     
     func reload() {
-        let duties = repository.readAll()
-        
-        for duty in duties {
-            if duty.person.role == .creditor {
-                self.creditors.append(duty)
-            } else {
-                self.debtors.append(duty)
-            }
+        var creditors = [Duty](), debtors = [Duty]()
+        for duty in dutiesRepository.readAll() {
+            duty.person.role == .creditor ? creditors.append(duty) : debtors.append(duty)
         }
+        self.creditors = creditors
+        self.debtors = debtors
     }
     
     func addDuty(amount: String, name: String, role: Person.Role) {
         let person = Person(name: name, role: role)
         let duty = Duty(id: UUID(), amount: Double(amount) ?? 0, person: person, historyList: [])
         
-        try? repository.create(entity: duty)
+        try? dutiesRepository.create(entity: duty)
         reload()
     }
     
@@ -45,7 +40,16 @@ class MainViewModel<T>: ObservableObject where T.Entity == Duty, T: RepositoryPr
         let index = offsets.first!
         let deletingEntity = role == .creditor ? creditors[index] : debtors[index]
             
-        try? repository.delete(entity: deletingEntity)
+        try? dutiesRepository.delete(entity: deletingEntity)
         reload()
+    }
+    
+    func delAll() {
+        for duty in creditors {
+            try? dutiesRepository.delete(entity: duty)
+        }
+        for duty in debtors {
+            try? dutiesRepository.delete(entity: duty)
+        }
     }
 }

@@ -16,7 +16,7 @@ class RealmRepository<EntityObject>: RepositoryProtocol
 
     init() {
         let config = Realm.Configuration(
-            schemaVersion: 4)
+            schemaVersion: 5)
         Realm.Configuration.defaultConfiguration = config
         realm = try! Realm()
     }
