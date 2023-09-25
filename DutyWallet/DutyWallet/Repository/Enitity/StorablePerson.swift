@@ -12,7 +12,7 @@ class StorablePerson: Object, StorableProtocol {
     @Persisted(primaryKey: true) var id: UUID
     @Persisted var name: String
     @Persisted var role: String
-    
+
     var model: Person {
         return Person(name: name, role: Person.Role(rawValue: role)!)
     }
@@ -25,9 +25,8 @@ extension Person: EntityProtocol {
         realmDuty.role = role.rawValue
         return realmDuty
     }
-    
+
     func toStorable() -> StorablePerson {
         return storable
     }
 }
-

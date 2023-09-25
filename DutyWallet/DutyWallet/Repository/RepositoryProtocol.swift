@@ -9,7 +9,7 @@ import Foundation
 
 protocol RepositoryProtocol {
     associatedtype Entity
-    
+
     func create(entity: Entity) throws
     func read(id: UUID) -> Entity?
     func readAll() -> [Entity]
@@ -19,13 +19,13 @@ protocol RepositoryProtocol {
 
 protocol EntityProtocol {
     associatedtype StoreType: StorableProtocol
-    
+
     func toStorable() -> StoreType
 }
 
 protocol StorableProtocol {
     associatedtype EntityObject: EntityProtocol
-    
+
     var model: EntityObject { get }
     var id: UUID { get }
 }

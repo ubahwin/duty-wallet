@@ -10,17 +10,16 @@ import SwiftUI
 struct DetailDutyView: View {
     @StateObject var dutyVM = DetailDutyViewModel(dutiesRepository: RealmRepository<Duty>())
     var duty: Duty
-    
+
     var body: some View {
         NavigationStack {
             VStack {
-                Text("\(duty.person.name) –" + " \(duty.person.role.title) " + "вот столько:" + " \(duty.amount.description)" + "р")
+                Text("\(duty.person.name) –" + " \(duty.person.role.title) "
+                     + "вот столько:" + " \(duty.amount.description)" + "р")
                 Button("чекнуть") {
                     dutyVM.reload()
                 }
-                Button("add history") {
-                    
-                }
+                Button("add history") { }
             }
             .padding()
             List {
@@ -40,5 +39,16 @@ struct DetailDutyView: View {
 }
 
 #Preview {
-    DetailDutyView(duty: Duty(id: UUID(), amount: 153, person: Person(name: "Ivan", role: .creditor), historyList: [History(id: UUID(), value: 64, info: "Куипл говно"), History(id: UUID(), value: 2635, info: "DIMA")]))
+    DetailDutyView(duty:
+        Duty(
+            id: UUID(),
+            amount: 153,
+            person:
+                Person(name: "Ivan", role: .creditor),
+            historyList: [
+                History(id: UUID(), value: 64, info: "Куипл говно"),
+                History(id: UUID(), value: 2635, info: "DIMA")
+            ]
+        )
+    )
 }

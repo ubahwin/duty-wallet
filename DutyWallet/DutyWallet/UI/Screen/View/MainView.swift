@@ -7,20 +7,20 @@
 
 import SwiftUI
 
-struct MainView: View { 
+struct MainView: View {
     @StateObject var mainVM = MainViewModel(repository: RealmRepository<Duty>())
     @State private var addAlert = false
-    
+
     struct CreditOrDutyView: View {
         @State private var name = ""
         @State private var amount = ""
-        
+
         var duties: [Duty]
         var role: Person.Role
-        var deleteCell: (IndexSet, Person.Role) -> ()
-        var add: (String, String, Person.Role) -> ()
+        var deleteCell: (IndexSet, Person.Role) -> Void
+        var add: (String, String, Person.Role) -> Void
         @Binding var alert: Bool
-        
+
         var body: some View {
             List {
                 ForEach(duties, id: \.id) { duty in
@@ -58,17 +58,29 @@ struct MainView: View {
             )
         }
     }
-    
+
     var body: some View {
         NavigationStack {
             TabView {
-                CreditOrDutyView(duties: mainVM.creditors, role: .creditor, deleteCell: mainVM.deleteDuty, add: mainVM.addDuty, alert: $addAlert)
+                CreditOrDutyView(
+                    duties: mainVM.creditors,
+                    role: .creditor,
+                    deleteCell: mainVM.deleteDuty,
+                    add: mainVM.addDuty,
+                    alert: $addAlert
+                )
                 .tabItem {
                     Image(systemName: "square.and.arrow.down")
                     Text("Мне должны")
                 }
-                
-                CreditOrDutyView(duties: mainVM.debtors, role: .debtor, deleteCell: mainVM.deleteDuty, add: mainVM.addDuty, alert: $addAlert)
+
+                CreditOrDutyView(
+                    duties: mainVM.debtors,
+                    role: .debtor,
+                    deleteCell: mainVM.deleteDuty,
+                    add: mainVM.addDuty,
+                    alert: $addAlert
+                )
                 .tabItem {
                     Image(systemName: "square.and.arrow.up")
                     Text("Я должен")

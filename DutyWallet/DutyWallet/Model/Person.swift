@@ -10,11 +10,11 @@ import Foundation
 struct Person {
     var name: String
     var role: Role
-    
+
     enum Role: String {
         case creditor
         case debtor
-        
+
         var title: String {
             switch self {
             case .creditor: return "тот, кому я должен"
